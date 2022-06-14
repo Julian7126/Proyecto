@@ -84,17 +84,31 @@
     background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: right;
-    opacity: 0.3
-    ;
+    opacity: 0.3;
+    
 }
+
+
+
 .visually-hidden{
-    color: red;
+
+    color: rgb(255, 0, 0);
     font-size: medium;
     font-family:'Courier New', Courier, monospace;
     display: flex;
     float: right;
+    margin-right: 10px;
+    border-radius: 10px;
     
    
+}
+.lanzamientos{
+   display: flex;
+   width: 100%;
+   margin-top: -20px;
+   justify-content: center;
+   color: red;
+   text-align: center;
 }
 
 
