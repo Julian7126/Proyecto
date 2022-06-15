@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+
+
+
 @media screen and (min-width: 1280px) {
 #body {
     color: white;
@@ -441,6 +444,199 @@ color: rgba(209, 19, 19, 0.329);
 }
 }
 
+
+@media (max-width: 767.98px) {
+
+
+    #body {
+        color: white;
+        background-color: black;
+        font-family:'Courier New', Courier, monospace;
+        position: relative;
+    
+    
+    }
+    
+    
+    .bloque1 {
+        display: flex;
+        height: 50px;
+        width: 100%;
+        position: relative;
+        border-radius: 20px;
+        text-align: center;
+        justify-content: center;
+        margin-top: -50px;
+        font-size: 10px;
+
+    
+    
+    }
+    
+    .calavera {
+        height: 50px;
+        width: 100%;
+        border-radius: 25px;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        opacity: 0.2;
+        margin:  5px;
+    
+    
+    }
+    
+    
+    .bloque2 {
+        color: black;
+        background-color: rgb(0, 0, 0);
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .articulos {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-size: medium;
+        color: rgb(209, 255, 2);
+        
+
+    }
+    
+    
+    
+    .bloque2 img {
+        height: 100px;
+        width: 45%;
+        border: 20px;
+        margin: 5%;
+        position: center;
+    
+    }
+    
+    .Notificaciones{
+        width: 100%;
+        height: 25px;
+        background-color: rgb(255, 248, 248);
+        display: flex;
+        justify-content: right;
+        opacity: 0.3;
+        border-radius: 20px;
+        
+    }
+    
+    
+    
+    .visually-hidden{
+    
+        color: rgb(0, 0, 0);
+        font-size: medium;
+        font-family:'Courier New', Courier, monospace;
+        display: flex;
+        float: right;
+        margin-right: 10px;
+        border-radius: 10px;
+        
+       
+    }
+    .lanzamientos{
+       display: flex;
+       width: 100%;
+       margin-top: -20px;
+       justify-content: center;
+       color: rgb(209, 255, 2);
+       text-align: center;
+    }
+    
+    
+    
+    
+    .bloque3 ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+    .bloque3 ul a{
+        font-size: medium;
+        font-family:'Courier New', Courier, monospace;
+        
+    }
+    
+    
+    nav ul a {
+        list-style: none;
+        text-decoration: none;
+        color: rgb(255, 19, 2);
+        font-size: 15px;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    
+    .angel_caido{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        border-radius: 40px;
+        opacity: 0.3;
+        position: relative;
+       
+    
+    }
+    
+    @keyframes movimiento {
+        from{
+            background-position : bottom 
+        }to{
+            background-position: top left }
+    
+        }
+    .bloque4 {
+        width: 100%;
+        height: 100%;
+        text-align: left;
+        position: relative;
+        background-image: url(/Proyecto/assets/angelcaido1.jpg);
+        background-size: 100%;
+        animation: movimiento 10s infinite linear alternate;
+        border-radius: 40px;
+    
+    }
+    .ruso{
+        font-family: 'Courier New', Courier, monospace;
+        margin-left: 25px;
+        margin-top: -500px;
+        color: rgb(209, 255, 2);
+        font-size:25px;
+        text-align: center;
+    
+    }
+    
+    .hotsale{
+        margin-top: 80px;
+        text-align: center;
+        font-family:'Courier New', Courier, monospace;
+        color: rgb(106, 134, 2);
+    }
+    
+
+    
+    
+    .footer{
+        color:rgb(209, 255, 2);
+        text-align: end;
+        margin-top: 330px;
+        margin-right: 20px;
+    }
+    
+    
+    
+}
 
 
 
