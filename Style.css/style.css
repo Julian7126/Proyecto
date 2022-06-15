@@ -498,16 +498,53 @@ color: rgba(209, 19, 19, 0.329);
         align-items: center;
     }
 
+    .bloque21{
+        color: black;
+        background-color: black;
+        height: 120px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .cervo{
+        height: 120px;
+        width: 200px;
+        display: flex;
+        position: center;
+        float:center;
+    
+    }
+    
+    
+        
+
     .articulos {
         display: flex;
         text-align: center;
         justify-content: center;
-        font-size: medium;
+        font-size: small;
         color: rgb(209, 255, 2);
         
 
     }
     
+    
+    
+    
+    
+    .formas{
+        height: 15px;
+        width: 50%;
+        font-family:'Courier New', Courier, monospace;
+        color:rgb(255, 255, 255);
+        font-size: 15px;
+
+    }
+ 
+    
+    
+
     
     
     .bloque2 img {
@@ -634,7 +671,73 @@ color: rgba(209, 19, 19, 0.329);
         margin-right: 20px;
     }
     
+   /* aca comienza pagina about us */
+
+
+.about{
+    width: 100%;
+    height: 500px;
+
+}
+.mascaras{
+    width: 100%;
+    height: 500px;
+    opacity: 0.2;
+}
+.raro{
+    text-align: right;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: rgb(209, 255, 2);
+    margin-top: -300px;
+    margin-right: 20px;
+}
+.back{
+    font-size: xx-large;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(209, 255, 2);
+    font-size:xx-large;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+.Comentarios{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    color: rgb(209, 255, 2);
     
+}
+.textodearea{
+    width: 100%;
+    height: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20PX;
+    text-align: center;
+    color:rgb(209, 255, 2);
+    opacity: 0.3;
+    border-radius: 10px;
+    justify-content: center;
+
+}
+.Send{
+    float: center;
+    width: 200px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+    text-align: center;
+
+
+
+
+
+
+
+
+}
     
 }
 
