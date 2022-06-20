@@ -1,0 +1,469 @@
+@import "colores";
+@import "tipografia";
+@import "estructura";
+
+@media screen and (min-width: 1280px)
+{
+    
+    #body {
+        color:$w;
+        background-color: black;
+        font-family:$letra;
+        position: relative;
+    
+    
+    }
+    
+    
+    .bloque1 {
+        display: flex;
+        height: 100px;
+        width: 100%;
+        border-radius: 5px;
+        position: relative;
+        border-radius: 20px;
+        .haters{
+            display: flex;
+            position:relative;
+            text-align:center;
+            margin-top: -100px;
+            margin-left: 165%;
+            font-family:$letra;
+            font-size: medium;
+        
+        
+        
+        }
+        
+    }
+    .articulos {
+        display: flex;
+        color: $w;
+        text-align: center;
+        margin-top: -150px;
+        margin-left: 25px;
+    
+    }
+    
+
+    .calavera {
+        height: 100px;
+        width: 100%;
+        border-radius: 5px;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        opacity: 0.5;
+        margin:  5px;
+    
+    
+    }
+    
+    
+    
+    
+    .bloque2 {
+        color: $b;
+        background-color: $b;
+        height: 200px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+                     img {
+                        height: 100px;
+                        width: 25%;
+                        border: 20px;
+                        margin: 5%;
+                        position: center;                   
+    }
+}
+    
+    .Notificaciones{
+        width: 100%;
+        height: 25px;
+        background-color: $b;
+        display: flex;
+        justify-content: right;
+        opacity: 0.3;
+
+        .visually-hidden{
+    
+            color: $r;
+            font-size: medium;
+            font-family:$letra;
+            display: flex;
+            float: right;
+            margin-right: 10px;
+            border-radius: 10px;
+            
+           
+        }
+        
+    }
+    .lanzamientos{
+       display: flex;
+       width: 100%;
+       margin-top: -20px;
+       justify-content: center;
+       color: $r;
+       text-align: center;
+    }
+    
+    
+    
+    
+    .bloque3 {
+                        ul {
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+    
+                            
+                                 a{
+                                font-size: medium;
+                                font-family:$letra;                            
+                                list-style: none;
+                                text-decoration: none;
+                                color: $w;
+                                font-size: 15px;
+                                border-radius: 10px;
+                                 padding: 5px;
+                                      
+                                 
+                            }
+                        }
+                    }
+
+ .bloque4 {
+            width: 100%;
+            height: 100%;
+            text-align: left;
+            position: relative;
+            background-image: url(/Proyecto/assets/angelcaido1.jpg);
+             background-size: 100%;
+            animation: movimiento 10s infinite linear alternate;
+            border-radius: 40px;
+            .angel_caido{
+                display: flex;
+                height: 100%;
+                width: 100%;
+                border-radius: 20px;
+                opacity: 0.2;
+                position: relative;
+            }
+ }                      
+
+ .ruso{
+      font-size: larger;
+    font-family: $letra;
+     margin-left: 25px;
+     margin-top: -500px;
+     color: $r;
+        font-size:25px;
+         text-align: center;
+                            
+             }
+                                            
+         
+
+    
+    @keyframes movimiento {
+        from{
+            background-position : bottom 
+        }to{
+            background-position: top left }
+    
+        }
+
+    
+    .hotsale{
+        margin-top: 100px;
+        text-align: center;
+        font-family:$letra2;
+        color: $w;
+        animation: cambiar 6s infinite alternate ;
+    
+    }
+    
+    @keyframes cambiar{
+        0%{margin-right: 0;}
+        20%{margin-right: 0;}
+        
+    
+        25%{margin-right: 10px;}
+        30%{margin-right: 15px;}
+        40%{margin-right: 25px;}
+    
+        50%{margin-right: -25px;}
+        60%{margin-right: -30px;}
+        70%{margin-right: -80px;}
+        80%{margin-right: 30px;}
+        90%{margin-right: 80px;}
+    
+    
+    }
+    
+    
+    .footer{
+        color:$r;
+        text-align: end;
+        margin-top: 330px;
+        margin-right: 20px;
+    }
+    
+    
+    .footer2{
+        display: Flex;
+        justify-content: right;
+        width: 100%;
+        height: 50px;
+    
+                
+                button {
+                    width: 50%;
+                    height: 100%;
+                    background-color: $r;
+                    border-radius: 20px;
+                    
+                        
+                        a  {
+                                list-style: none;
+                                text-decoration: none;
+                                color: $w;
+                                font-size: 30px;
+                                border-radius: 10px;
+                                padding: 5px;
+                            
+                            }
+                        }
+                }           
+    
+    
+    /*----- termina el index----*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .bloque21{
+        color: $b;
+        background-color: $b;
+        height: 200px;
+        width: 100%;
+        display: flex;
+    }
+        
+    
+    .cervo{
+        height: 100px;
+        width: 200px;
+        display: flex;
+        margin-top: 50px;
+        margin-left: 20px;
+    
+    }
+    
+    .formas{
+        height: 100px;
+        width: 50%;
+        margin-top: -110px;
+        margin-left: 460px;
+        font-family:$letra;
+        color:$r;
+        font-size: 25px;
+        
+    
+      
+    
+    }
+    .box{
+       width: 220px;
+       height: 25px;
+       float: right;
+       position: relative;
+       margin-top: -100px;
+       margin-right:50px;
+       
+    }
+    
+    .vete{
+        width: 100%;
+        height: 100%;
+        color: $b;
+        margin-left: 10px;
+        position: relative;
+    
+    
+    }
+     
+    .contenedorventa{
+        height: 100%;
+        width: 100%;
+        background-color:$m;
+        justify-content: center;
+        align-items: center;
+    
+    
+    }
+    
+        .padre{
+            display: grid;
+            width: 650px;
+            height: 500px;
+            grid-template-columns:repeat(3,200px);
+            grid-template-rows:repeat(3,200px);
+            justify-items: center;
+            column-gap: 20px;
+            row-gap: 20px;
+            align-content: space-between;
+            background-color: $m;
+            margin-left: 25%;
+           
+            
+        }
+        
+        .hijo{
+            width: 100%;
+            height: 100%;
+            color: $b;
+            text-align: center;
+            font-family: $letra;
+            padding: 20px;
+            margin-left: 10px;
+        
+    
+        }
+        
+        
+    
+        
+        .buzoremeras{
+            height: 100%;
+            width: 100%;
+        } 
+    
+    .contactos{
+        width: 300px;
+       height: 75px;
+       float: right;
+       position: relative;
+       margin-top: -100px;
+       margin-right:50px;
+      
+      
+    }
+    
+    .contactos1{
+        color: $r;
+        width: 100%;
+        height: 100%;
+        margin-left: 10px;
+        position: relative;
+        font-family:$letra;
+        list-style:none;
+    
+    }
+    
+    
+    .bloque41{
+        width: 600px;
+        height:100%;
+        display: flex;
+    }
+    .angelmuriendo{
+        display: flex;
+        height: 800px;
+        width: 100%;
+        border-radius: 20px;
+        opacity: 0.3;
+        position: relative;
+    }
+    .input{
+        height: 150px;
+        width: 75%;
+        margin-left: 25px;
+      display: flex;
+      margin-left: 25px;
+      margin-top: -700px;
+      position: absolute;
+    
+    }
+    .input1{
+        width: 275px;
+        height: 40px;
+        background-color: $m;
+        color: $w;
+        padding-top: 20px;
+        border-radius: 25%;
+        text-align: center;
+        border-bottom: 3px solid;
+    }
+    
+    .acuerdo{
+        font-size: 60px;
+    color: $m;
+    }
+    
+    .about{
+        width: 100%;
+        height: 900px;
+    
+    }
+    .mascaras{
+        width: 100%;
+        height: 100%;
+        opacity: 0.2;
+    }
+    .raro{
+        text-align: center;
+        font-family: $letra;
+        color: $r;
+        margin-top: -500px;
+    }
+    .back{
+        font-size: xx-large;
+        list-style: none;
+        text-decoration: none;
+        color: $r;
+        font-size:xx-large;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    
+    
+    .Comentarios{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        color: $r;
+        
+    }
+    .textodearea{
+        width: 100%;
+        height: 50px;
+        font-family: $letra;
+        font-size: 40PX;
+        text-align: center;
+        color:$r;
+        opacity: 0.3;
+        border-radius: 20px;
+        justify-content: center;
+    
+    }
+    .Send{
+        float: center;
+        width: 200px;
+        font-family: $letra;
+        color: $r;
+        font-size: 20px;
+        text-align: center;
+    
+    }
+    }
+    
