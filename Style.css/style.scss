@@ -2,12 +2,23 @@
 @import "tipografia";
 @import "estructura";
 
+
+$Alternos:(alterno1:rgba(226, 53, 0, 0.877), alterno2:rgb(236, 232, 0),alterno3:rgb(162, 0, 255));
+
+
+@mixin sizes($w2 ,$h2) {
+    width: $w2;
+    height: $h2;
+}
+
+
+
 @media screen and (min-width: 1280px)
 {
     
     #body {
         color:$w;
-        background-color: black;
+        background-color: $b;
         font-family:$letra;
         position: relative;
     
@@ -18,7 +29,7 @@
     .bloque1 {
         display: flex;
         height: 100px;
-        width: 100%;
+        width: $w2;
         border-radius: 5px;
         position: relative;
         border-radius: 20px;
@@ -47,8 +58,8 @@
     
 
     .calavera {
-        height: 100px;
-        width: 100%;
+        height: $h1;
+        width: $w2;
         border-radius: 5px;
         position: relative;
         justify-content: center;
@@ -67,12 +78,12 @@
         color: $b;
         background-color: $b;
         height: 200px;
-        width: 100%;
+        width: $w2;
         display: flex;
         justify-content: center;
         align-items: center;
                      img {
-                        height: 100px;
+                        height: $h1;
                         width: 25%;
                         border: 20px;
                         margin: 5%;
@@ -81,7 +92,7 @@
 }
     
     .Notificaciones{
-        width: 100%;
+        width: $w2;
         height: 25px;
         background-color: $b;
         display: flex;
@@ -104,7 +115,7 @@
     }
     .lanzamientos{
        display: flex;
-       width: 100%;
+       width: $w2;
        margin-top: -20px;
        justify-content: center;
        color: $r;
@@ -137,18 +148,16 @@
                     }
 
  .bloque4 {
-            width: 100%;
-            height: 100%;
+           @include sizes;
             text-align: left;
             position: relative;
             background-image: url(/Proyecto/assets/angelcaido1.jpg);
-             background-size: 100%;
+             background-size: $w2;
             animation: movimiento 10s infinite linear alternate;
             border-radius: 40px;
             .angel_caido{
+                @include sizes;
                 display: flex;
-                height: 100%;
-                width: 100%;
                 border-radius: 20px;
                 opacity: 0.2;
                 position: relative;
@@ -179,7 +188,7 @@
 
     
     .hotsale{
-        margin-top: 100px;
+        margin-top: $w2;
         text-align: center;
         font-family:$letra2;
         color: $w;
@@ -215,31 +224,43 @@
     
     
     .footer2{
+        @include sizes;
         display: Flex;
-        justify-content: right;
-        width: 100%;
-        height: 50px;
+        background-color:$b;
+        justify-content: center;
     
                 
-                button {
+                .suscribirse{
                     width: 50%;
-                    height: 100%;
-                    background-color: $r;
+                    height: 50%;
                     border-radius: 20px;
+                    background-color:rgba(146, 144, 144, 0.644);
                     
                         
-                        a  {
+                    .derivados {
                                 list-style: none;
                                 text-decoration: none;
-                                color: $w;
+                                color: $r;
                                 font-size: 30px;
                                 border-radius: 10px;
                                 padding: 5px;
-                            
+                                
                             }
                         }
                 }           
     
+    .nuevasideas{
+        @extend .suscribirse;
+        background-color:map-get($map:$Alternos, $key:alterno1)
+    }
+
+    .derivados2{
+        @extend .derivados;
+        color:map-get($map:$Alternos, $key:alterno3)
+    }
+
+
+     
     
     /*----- termina el index----*/
     
@@ -255,13 +276,13 @@
         color: $b;
         background-color: $b;
         height: 200px;
-        width: 100%;
+        width: $w2;
         display: flex;
     }
         
     
     .cervo{
-        height: 100px;
+        height: $h2;
         width: 200px;
         display: flex;
         margin-top: 50px;
@@ -270,7 +291,7 @@
     }
     
     .formas{
-        height: 100px;
+        height: $h2;
         width: 50%;
         margin-top: -110px;
         margin-left: 460px;
@@ -293,8 +314,7 @@
     }
     
     .vete{
-        width: 100%;
-        height: 100%;
+        @include sizes;
         color: $b;
         margin-left: 10px;
         position: relative;
@@ -303,8 +323,7 @@
     }
      
     .contenedorventa{
-        height: 100%;
-        width: 100%;
+       @include sizes;
         background-color:$m;
         justify-content: center;
         align-items: center;
@@ -329,8 +348,8 @@
         }
         
         .hijo{
-            width: 100%;
-            height: 100%;
+            width: $w2;
+            height: $h1;
             color: $b;
             text-align: center;
             font-family: $letra;
@@ -344,8 +363,7 @@
     
         
         .buzoremeras{
-            height: 100%;
-            width: 100%;
+            @include sizes;
         } 
     
     .contactos{
@@ -360,9 +378,8 @@
     }
     
     .contactos1{
+        @include sizes;
         color: $r;
-        width: 100%;
-        height: 100%;
         margin-left: 10px;
         position: relative;
         font-family:$letra;
@@ -373,13 +390,13 @@
     
     .bloque41{
         width: 600px;
-        height:100%;
+        height:$h2;
         display: flex;
     }
     .angelmuriendo{
         display: flex;
         height: 800px;
-        width: 100%;
+        width: $w2;
         border-radius: 20px;
         opacity: 0.3;
         position: relative;
@@ -411,13 +428,12 @@
     }
     
     .about{
-        width: 100%;
+        width: $w2;
         height: 900px;
     
     }
     .mascaras{
-        width: 100%;
-        height: 100%;
+        @include sizes;
         opacity: 0.2;
     }
     .raro{
@@ -438,14 +454,13 @@
     
     
     .Comentarios{
+        @include sizes;
         display: flex;
-        width: 100%;
-        height: 100%;
         color: $r;
         
     }
     .textodearea{
-        width: 100%;
+        width: $w2;
         height: 50px;
         font-family: $letra;
         font-size: 40PX;
@@ -467,3 +482,481 @@
     }
     }
     
+
+@media (max-width: 767.98px) {
+        #body {
+            color: $w;
+            background-color: $b;
+            font-family:$letra;
+            position: relative;
+        
+        
+        }
+        
+        
+        .bloque1 {
+            display: flex;
+            height: 50px;
+            width: $w2;
+            position: relative;
+            border-radius: 20px;
+            text-align: center;
+            justify-content: center;
+            margin-top: -50px;
+            font-size: 10px;
+        
+        
+        }
+        
+        .calavera {
+            height: 50px;
+            width: $w2;
+            border-radius: 25px;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            opacity: 0.2;
+            margin:  5px;
+        
+        
+        }
+
+        .articulos {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            font-size: medium;
+            font-size: small;
+            color: $v;
+    
+    
+        }
+        
+        
+        .bloque2 {
+            color: $b;
+            background-color: $b;
+            height: 100px;
+            width: $w2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+                          img {
+                            height: 100px;
+                            width: 45%;
+                             color: $m;
+                            margin-right: 20px;
+
+                            }
+        }
+    
+        .bloque21{
+            color: $b;
+            background-color: $b;
+            height: 120px;
+            width: $w2;
+            display: flex;
+            justify-content: center;
+        }
+    
+        .cervo{
+            height: 120px;
+            width: 200px;
+            display: flex;
+            position: center;
+            float:center;
+    
+        }
+    
+    
+        .formas{
+            height: 15px;
+            width: 50%;
+            font-family:$letra;
+            color:$w;
+            font-size: 15px;
+    
+        }
+    
+    
+        .Notificaciones{
+            width: $w2;
+            height: 25px;
+            background-color: $w;
+            display: flex;
+            justify-content: right;
+            opacity: 0.3;
+            border-radius: 20px;
+                 
+                                .visually-hidden{
+                                
+                                    color: $b;
+                                    font-size: medium;
+                                    font-family:$letra;
+                                    display: flex;
+                                    float: right;
+                                    margin-right: 10px;
+                                    border-radius: 10px;
+                                    
+                                             }
+                                }
+        .lanzamientos{
+           display: flex;
+           width:$w2;
+           margin-top: -20px;
+           justify-content: center;
+           color: $v;
+           text-align: center;
+        }
+        
+        
+        
+        
+        .bloque3 {
+                                ul {
+                                display: flex;
+                                justify-content: space-around;
+                                align-items: center;
+        
+        
+                            
+                                    a {
+                                list-style: none;
+                                text-decoration: none;
+                                color: $r;
+                                font-size: 15px;
+                                border-radius: 10px;
+                                padding: 5px;
+      
+                            }   
+                         }
+                    }
+        
+        
+        .angel_caido{
+            @include sizes;
+            display: flex;
+            border-radius: 40px;
+            opacity: 0.3;
+            position: relative;
+           
+        
+        }
+        
+        @keyframes movimiento {
+            from{
+                background-position : bottom 
+            }to{
+                background-position: top left }
+        
+            }
+        .bloque4 {
+            @include sizes;
+            text-align: left;
+            position: relative;
+            background-image: url(/Proyecto/assets/angelcaido1.jpg);
+            background-size: 100%;
+            animation: movimiento 10s infinite linear alternate;
+            border-radius: 40px;
+                                .angel_caido{
+                                    display: flex;
+                                    height: 100%;
+                                    width:$w2;
+                                    border-radius: 40px;
+                                    opacity: 0.3;
+                                    position: relative;
+                                
+                                
+                                }
+                             }
+        .ruso{
+            font-family: $letra;
+            margin-left: 25px;
+            margin-top: -500px;
+            color: $v;
+            font-size:25px;
+            text-align: center;
+        
+        }
+        
+        .hotsale{
+            margin-top: 80px;
+            text-align: center;
+            font-family:$letra;
+            color: rgb(106, 134, 2);
+        }
+        
+        
+        
+        .footer{
+            color:$v;
+            text-align: end;
+            margin-top: 330px;
+            margin-right: 20px;
+        }
+          
+        footer2{
+            display: Flex;
+            width: $w2;
+            height: 100px;
+            background-color:$b;
+            justify-content: center;
+        
+                    
+                    .suscribirse{
+                        width: 50%;
+                        height: 50%;
+                        border-radius: 20px;
+                        background-color:rgba(146, 144, 144, 0.644);
+                        
+                            
+                        .derivados {
+                                    list-style: none;
+                                    text-decoration: none;
+                                    color: $r;
+                                    font-size: 30px;
+                                    border-radius: 10px;
+                                    padding: 5px;
+                                    
+                                }
+                            }
+                    }           
+        
+        .nuevasideas{
+            @extend .suscribirse;
+            background-color:map-get($map:$Alternos, $key:alterno1)
+        }
+    
+        .derivados2{
+            @extend .derivados;
+            color:map-get($map:$Alternos, $key:alterno3)
+        }
+    
+                                                        /* termina index*/
+
+             
+    .bloque21{
+        color: $b;
+        background-color: $b;
+        height: 200px;
+        width: $w2;
+        display: flex;
+    
+                        .cervo{
+                            height: 100px;
+                            width: 200px;
+                            display: flex;
+                            float: left;
+                        
+                        }
+                    }
+    
+    .formas{
+        height: 100px;
+        width: 50%;
+        margin-top: -50px;
+        margin-left: 100px;
+        font-family:$letra;
+        color:$v;
+        font-size: 15px;
+        
+    
+      
+    
+    }
+  
+    .box{
+       width: 220px;
+       height: 25px;
+       float: right;
+       position: relative;
+       margin-top: -100px;
+       margin-right:50px;
+       
+                    .vete{
+                        width: $w2;
+                        height: 100%;
+                        color: $b;
+                        margin-left: 5px;
+                        position: relative;
+
+                    }
+
+    }
+    
+     
+    .contenedorventa{
+        @include sizes;
+        background-color:$v;
+        justify-content: center;
+        align-items: center;
+    
+                                .padre{
+                                    @include sizes;
+                                    display: grid;
+                                    grid-template-columns:repeat(3,125px);
+                                    grid-template-rows:repeat(3,125px);
+                                    justify-items: center;
+                                    column-gap: 10px;
+                                    row-gap: 10px;
+                                    align-content: space-around;
+                                    background-color: $v;
+                                    margin-left: 25%;
+                                
+                                                    .hijo{
+                                                        width: $w2;
+                                                        height: 100%;
+                                                        color: $b;
+                                                        text-align: center;
+                                                        font-family: $letra;
+                                                        padding: 20px;
+                                                        margin-left: 10px;
+                                                    
+                                                
+                                                    }
+                                                }
+                                            }
+    
+        
+        .buzoremeras{
+          @include sizes;
+        } 
+    
+    .contactos{
+        width: 300px;
+       height: 75px;
+       float: right;
+       position: relative;
+       margin-top: -100px;
+       margin-right:50px;
+      
+      
+    }
+    
+    .contactos1{
+        color: $v;
+        width: $w2;
+        height: 100%;
+        margin-left: 10px;
+        position: relative;
+        font-family:$letra;
+        list-style:none;
+    
+    }
+    
+    
+    .bloque41{
+        width: 500px;
+        height:100%;
+        display: flex;
+    
+                        .angelmuriendo{
+                            display: flex;
+                            height: 500px;
+                            width: $w2;
+                            border-radius: 10px;
+                            opacity: 0.3;
+                            position: relative;
+                  
+                                    .input{
+                                        height: 150px;
+                                        width: 75%;
+                                        margin-left: 25px;
+                                        display: flex;
+                                        margin-left: 25px;
+                                        margin-top: -100px;
+                                        position: absolute;
+                                        
+    
+                                                    .input1{
+                                                        width: 275px;
+                                                        height: 40px;
+                                                        background-color: $v;
+                                                        color: $w;
+                                                        padding-top: 20px;
+                                                        border-radius: 25%;
+                                                        text-align: center;
+                                                        border-bottom: 3px solid;
+
+                                                        .acuerdo{
+                                                            font-size: 60px;
+                                                        color: $v;
+
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    
+                                          
+                                           
+    
+       /* aca comienza pagina about us */
+    
+    
+    .about{
+        width: $w2;
+        height: 500px;
+    
+    }
+    .mascaras{
+        width: $w2;
+        height: 500px;
+        opacity: 0.2;
+    }
+    .raro{
+        text-align: right;
+        font-family: $letra;
+        font-size: 15px;
+        color: $v;
+        margin-top: -300px;
+        margin-right: 20px;
+    }
+    .back{
+        font-size: xx-large;
+        list-style: none;
+        text-decoration: none;
+        color: $v;
+        font-size:xx-large;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    
+    
+    .Comentarios{
+        @include sizes;
+        display: flex;
+        color: $v;
+    
+    }
+    .textodearea{
+        width: $w2;
+        height: 50px;
+        font-family: $letra;
+        font-size: 20PX;
+        text-align: center;
+        color:$v;
+        opacity: 0.3;
+        border-radius: 10px;
+        justify-content: center;
+    
+    }
+    .Send{
+        float: center;
+        width: 200px;
+        font-family: $letra;
+        color: $b;
+        font-size: 10px;
+        text-align: center;
+    
+    
+    
+    
+    
+    
+    
+    
+    }
+}
+

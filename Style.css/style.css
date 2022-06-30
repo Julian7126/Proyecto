@@ -234,23 +234,32 @@
 
   .footer2 {
     display: Flex;
-    justify-content: right;
     width: 100%;
-    height: 50px;
+    height: 100px;
+    background-color: black;
+    justify-content: center;
   }
-  .footer2 button {
+  .footer2 .suscribirse, .footer2 .nuevasideas {
     width: 50%;
-    height: 100%;
-    background-color: red;
+    height: 50%;
     border-radius: 20px;
+    background-color: rgba(146, 144, 144, 0.644);
   }
-  .footer2 button a {
+  .footer2 .suscribirse .derivados, .footer2 .suscribirse .derivados2, .footer2 .nuevasideas .derivados, .footer2 .nuevasideas .derivados2 {
     list-style: none;
     text-decoration: none;
-    color: white;
+    color: red;
     font-size: 30px;
     border-radius: 10px;
     padding: 5px;
+  }
+
+  .nuevasideas {
+    background-color: rgba(226, 53, 0, 0.877);
+  }
+
+  .derivados2 {
+    color: rgb(162, 0, 255);
   }
 
   /*----- termina el index----*/
@@ -448,6 +457,412 @@
     font-family: "Courier New", Courier, monospace;
     color: red;
     font-size: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 767.98px) {
+  #body {
+    color: white;
+    background-color: black;
+    font-family: "Courier New", Courier, monospace;
+    position: relative;
+  }
+
+  .bloque1 {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    position: relative;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    margin-top: -50px;
+    font-size: 10px;
+  }
+
+  .calavera {
+    height: 50px;
+    width: 100%;
+    border-radius: 25px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    opacity: 0.2;
+    margin: 5px;
+  }
+
+  .articulos {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: medium;
+    font-size: small;
+    color: rgb(209, 255, 2);
+  }
+
+  .bloque2 {
+    color: black;
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bloque2 img {
+    height: 100px;
+    width: 45%;
+    color: rgba(255, 0, 0, 0.192);
+    margin-right: 20px;
+  }
+
+  .bloque21 {
+    color: black;
+    background-color: black;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .cervo {
+    height: 120px;
+    width: 200px;
+    display: flex;
+    position: center;
+    float: center;
+  }
+
+  .formas {
+    height: 15px;
+    width: 50%;
+    font-family: "Courier New", Courier, monospace;
+    color: white;
+    font-size: 15px;
+  }
+
+  .Notificaciones {
+    width: 100%;
+    height: 25px;
+    background-color: white;
+    display: flex;
+    justify-content: right;
+    opacity: 0.3;
+    border-radius: 20px;
+  }
+  .Notificaciones .visually-hidden {
+    color: black;
+    font-size: medium;
+    font-family: "Courier New", Courier, monospace;
+    display: flex;
+    float: right;
+    margin-right: 10px;
+    border-radius: 10px;
+  }
+
+  .lanzamientos {
+    display: flex;
+    width: 100%;
+    margin-top: -20px;
+    justify-content: center;
+    color: rgb(209, 255, 2);
+    text-align: center;
+  }
+
+  .bloque3 ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .bloque3 ul a {
+    list-style: none;
+    text-decoration: none;
+    color: red;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 5px;
+  }
+
+  .angel_caido {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 40px;
+    opacity: 0.3;
+    position: relative;
+  }
+
+  @-webkit-keyframes movimiento {
+    from {
+      background-position: bottom;
+    }
+    to {
+      background-position: top left;
+    }
+  }
+
+  @keyframes movimiento {
+    from {
+      background-position: bottom;
+    }
+    to {
+      background-position: top left;
+    }
+  }
+  .bloque4 {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    position: relative;
+    background-image: url(/Proyecto/assets/angelcaido1.jpg);
+    background-size: 100%;
+    -webkit-animation: movimiento 10s infinite linear alternate;
+            animation: movimiento 10s infinite linear alternate;
+    border-radius: 40px;
+  }
+  .bloque4 .angel_caido {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 40px;
+    opacity: 0.3;
+    position: relative;
+  }
+
+  .ruso {
+    font-family: "Courier New", Courier, monospace;
+    margin-left: 25px;
+    margin-top: -500px;
+    color: rgb(209, 255, 2);
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .hotsale {
+    margin-top: 80px;
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    color: rgb(106, 134, 2);
+  }
+
+  .footer {
+    color: rgb(209, 255, 2);
+    text-align: end;
+    margin-top: 330px;
+    margin-right: 20px;
+  }
+
+  .footer2 {
+    display: Flex;
+    justify-content: right;
+    width: 100%;
+    height: 50px;
+  }
+  .footer2 button {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(209, 255, 2);
+    border-radius: 10px;
+  }
+  .footer2 button a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    border-radius: 50px;
+    padding: 2px;
+  }
+
+  /* termina index*/
+  .bloque21 {
+    color: black;
+    background-color: black;
+    height: 200px;
+    width: 100%;
+    display: flex;
+  }
+  .bloque21 .cervo {
+    height: 100px;
+    width: 200px;
+    display: flex;
+    float: left;
+  }
+
+  .formas {
+    height: 100px;
+    width: 50%;
+    margin-top: -50px;
+    margin-left: 100px;
+    font-family: "Courier New", Courier, monospace;
+    color: rgb(209, 255, 2);
+    font-size: 15px;
+  }
+
+  .box {
+    width: 220px;
+    height: 25px;
+    float: right;
+    position: relative;
+    margin-top: -100px;
+    margin-right: 50px;
+  }
+  .box .vete {
+    width: 100%;
+    height: 100%;
+    color: black;
+    margin-left: 5px;
+    position: relative;
+  }
+
+  .contenedorventa {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(209, 255, 2);
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedorventa .padre {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(3, 125px);
+    grid-template-rows: repeat(3, 125px);
+    justify-items: center;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    row-gap: 10px;
+    align-content: space-around;
+    background-color: rgb(209, 255, 2);
+    margin-left: 25%;
+  }
+  .contenedorventa .padre .hijo {
+    width: 100%;
+    height: 100%;
+    color: black;
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    padding: 20px;
+    margin-left: 10px;
+  }
+
+  .buzoremeras {
+    height: 100%;
+    width: 100%;
+  }
+
+  .contactos {
+    width: 300px;
+    height: 75px;
+    float: right;
+    position: relative;
+    margin-top: -100px;
+    margin-right: 50px;
+  }
+
+  .contactos1 {
+    color: rgb(209, 255, 2);
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+    position: relative;
+    font-family: "Courier New", Courier, monospace;
+    list-style: none;
+  }
+
+  .bloque41 {
+    width: 500px;
+    height: 100%;
+    display: flex;
+  }
+  .bloque41 .angelmuriendo {
+    display: flex;
+    height: 500px;
+    width: 100%;
+    border-radius: 10px;
+    opacity: 0.3;
+    position: relative;
+  }
+  .bloque41 .angelmuriendo .input {
+    height: 150px;
+    width: 75%;
+    margin-left: 25px;
+    display: flex;
+    margin-left: 25px;
+    margin-top: -100px;
+    position: absolute;
+  }
+  .bloque41 .angelmuriendo .input .input1 {
+    width: 275px;
+    height: 40px;
+    background-color: rgb(209, 255, 2);
+    color: white;
+    padding-top: 20px;
+    border-radius: 25%;
+    text-align: center;
+    border-bottom: 3px solid;
+  }
+  .bloque41 .angelmuriendo .input .input1 .acuerdo {
+    font-size: 60px;
+    color: rgb(209, 255, 2);
+  }
+
+  /* aca comienza pagina about us */
+  .about {
+    width: 100%;
+    height: 500px;
+  }
+
+  .mascaras {
+    width: 100%;
+    height: 500px;
+    opacity: 0.2;
+  }
+
+  .raro {
+    text-align: right;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 15px;
+    color: rgb(209, 255, 2);
+    margin-top: -300px;
+    margin-right: 20px;
+  }
+
+  .back {
+    font-size: xx-large;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(209, 255, 2);
+    font-size: xx-large;
+    border-radius: 10px;
+    padding: 5px;
+  }
+
+  .Comentarios {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    color: rgb(209, 255, 2);
+  }
+
+  .textodearea {
+    width: 100%;
+    height: 50px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20PX;
+    text-align: center;
+    color: rgb(209, 255, 2);
+    opacity: 0.3;
+    border-radius: 10px;
+    justify-content: center;
+  }
+
+  .Send {
+    float: center;
+    width: 200px;
+    font-family: "Courier New", Courier, monospace;
+    color: black;
+    font-size: 10px;
     text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
