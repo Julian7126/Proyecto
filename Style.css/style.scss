@@ -2,15 +2,22 @@
 @import "tipografia";
 @import "estructura";
 
-
-$Alternos:(alterno1:rgba(226, 53, 0, 0.877), alterno2:rgb(236, 232, 0),alterno3:rgb(162, 0, 255));
-
-
-@mixin sizes($w2 ,$h2) {
-    width: $w2;
-    height: $h2;
+.nuevasideas{
+    @extend .suscribirse;
+    background-color:map-get($map:$Alternos, $key:alterno1)
 }
 
+.derivados2{
+    @extend .derivados;
+    color:map-get($map:$Alternos, $key:alterno3)
+}
+
+
+@mixin sizes($w2 ,$h2){
+    width: 100%;
+    height: 100%;
+}
+$Alternos:(alterno1:rgba(226, 53, 0, 0.877), alterno2:rgb(236, 232, 0),alterno3:rgb(162, 0, 255));
 
 
 @media screen and (min-width: 1280px)
@@ -148,21 +155,22 @@ $Alternos:(alterno1:rgba(226, 53, 0, 0.877), alterno2:rgb(236, 232, 0),alterno3:
                     }
 
  .bloque4 {
-           @include sizes;
+            @include sizes($w2,$h2);
             text-align: left;
             position: relative;
             background-image: url(/Proyecto/assets/angelcaido1.jpg);
-             background-size: $w2;
+            background-size: $w2;
             animation: movimiento 10s infinite linear alternate;
             border-radius: 40px;
-            .angel_caido{
-                @include sizes;
-                display: flex;
-                border-radius: 20px;
-                opacity: 0.2;
-                position: relative;
-            }
- }                      
+            
+                                .angel_caido{
+                                    @include sizes($w2,$h2);
+                                    display: flex;
+                                    border-radius: 20px;
+                                    opacity: 0.2;
+                                    position: relative;
+                                }
+          }                      
 
  .ruso{
       font-size: larger;
@@ -193,6 +201,8 @@ $Alternos:(alterno1:rgba(226, 53, 0, 0.877), alterno2:rgb(236, 232, 0),alterno3:
         font-family:$letra2;
         color: $w;
         animation: cambiar 6s infinite alternate ;
+        margin-top: 100px;
+    
     
     }
     
@@ -224,7 +234,7 @@ $Alternos:(alterno1:rgba(226, 53, 0, 0.877), alterno2:rgb(236, 232, 0),alterno3:
     
     
     .footer2{
-        @include sizes;
+        @include sizes ($w2,$h2);
         display: Flex;
         background-color:$b;
         justify-content: center;
@@ -249,15 +259,7 @@ $Alternos:(alterno1:rgba(226, 53, 0, 0.877), alterno2:rgb(236, 232, 0),alterno3:
                         }
                 }           
     
-    .nuevasideas{
-        @extend .suscribirse;
-        background-color:map-get($map:$Alternos, $key:alterno1)
-    }
 
-    .derivados2{
-        @extend .derivados;
-        color:map-get($map:$Alternos, $key:alterno3)
-    }
 
 
      
@@ -282,7 +284,7 @@ $Alternos:(alterno1:rgba(226, 53, 0, 0.877), alterno2:rgb(236, 232, 0),alterno3:
         
     
     .cervo{
-        height: $h2;
+        height: 100px;
         width: 200px;
         display: flex;
         margin-top: 50px;
@@ -314,7 +316,7 @@ $Alternos:(alterno1:rgba(226, 53, 0, 0.877), alterno2:rgb(236, 232, 0),alterno3:
     }
     
     .vete{
-        @include sizes;
+        @include sizes($w2,$h2);
         color: $b;
         margin-left: 10px;
         position: relative;
@@ -323,8 +325,8 @@ $Alternos:(alterno1:rgba(226, 53, 0, 0.877), alterno2:rgb(236, 232, 0),alterno3:
     }
      
     .contenedorventa{
-       @include sizes;
-        background-color:$m;
+       @include sizes($w2,$h2);
+        background-color:rgba(90, 88, 88, 0.932);
         justify-content: center;
         align-items: center;
     
@@ -341,7 +343,7 @@ $Alternos:(alterno1:rgba(226, 53, 0, 0.877), alterno2:rgb(236, 232, 0),alterno3:
             column-gap: 20px;
             row-gap: 20px;
             align-content: space-between;
-            background-color: $m;
+            background-color: rgb(63, 59, 59);
             margin-left: 25%;
            
             
@@ -363,7 +365,7 @@ $Alternos:(alterno1:rgba(226, 53, 0, 0.877), alterno2:rgb(236, 232, 0),alterno3:
     
         
         .buzoremeras{
-            @include sizes;
+            @include sizes($w2,$h2);
         } 
     
     .contactos{
@@ -376,9 +378,10 @@ $Alternos:(alterno1:rgba(226, 53, 0, 0.877), alterno2:rgb(236, 232, 0),alterno3:
       
       
     }
+
     
     .contactos1{
-        @include sizes;
+        @include sizes($w2,$h2);
         color: $r;
         margin-left: 10px;
         position: relative;
@@ -387,6 +390,13 @@ $Alternos:(alterno1:rgba(226, 53, 0, 0.877), alterno2:rgb(236, 232, 0),alterno3:
     
     }
     
+
+    .instagram{                 
+                                
+                                font-size: large;   
+                                list-style: none;
+                                text-decoration:none;
+    }    
     
     .bloque41{
         width: 600px;
@@ -407,7 +417,7 @@ $Alternos:(alterno1:rgba(226, 53, 0, 0.877), alterno2:rgb(236, 232, 0),alterno3:
         margin-left: 25px;
       display: flex;
       margin-left: 25px;
-      margin-top: -700px;
+      margin-top: -800px;
       position: absolute;
     
     }
@@ -424,7 +434,7 @@ $Alternos:(alterno1:rgba(226, 53, 0, 0.877), alterno2:rgb(236, 232, 0),alterno3:
     
     .acuerdo{
         font-size: 60px;
-    color: $m;
+    color: white;
     }
     
     .about{
@@ -433,7 +443,7 @@ $Alternos:(alterno1:rgba(226, 53, 0, 0.877), alterno2:rgb(236, 232, 0),alterno3:
     
     }
     .mascaras{
-        @include sizes;
+        @include sizes($w2,$h2);
         opacity: 0.2;
     }
     .raro{
@@ -454,7 +464,7 @@ $Alternos:(alterno1:rgba(226, 53, 0, 0.877), alterno2:rgb(236, 232, 0),alterno3:
     
     
     .Comentarios{
-        @include sizes;
+        @include sizes($w2,$h2);
         display: flex;
         color: $r;
         
@@ -480,10 +490,11 @@ $Alternos:(alterno1:rgba(226, 53, 0, 0.877), alterno2:rgb(236, 232, 0),alterno3:
         text-align: center;
     
     }
-    }
+}
     
 
-@media (max-width: 767.98px) {
+@media (max-width: 767.98px) 
+{
         #body {
             color: $w;
             background-color: $b;
@@ -635,7 +646,7 @@ $Alternos:(alterno1:rgba(226, 53, 0, 0.877), alterno2:rgb(236, 232, 0),alterno3:
         
         
         .angel_caido{
-            @include sizes;
+            @include sizes($w2,$h2);
             display: flex;
             border-radius: 40px;
             opacity: 0.3;
@@ -652,7 +663,7 @@ $Alternos:(alterno1:rgba(226, 53, 0, 0.877), alterno2:rgb(236, 232, 0),alterno3:
         
             }
         .bloque4 {
-            @include sizes;
+            @include sizes($w2,$h2);
             text-align: left;
             position: relative;
             background-image: url(/Proyecto/assets/angelcaido1.jpg);
@@ -696,7 +707,7 @@ $Alternos:(alterno1:rgba(226, 53, 0, 0.877), alterno2:rgb(236, 232, 0),alterno3:
             margin-right: 20px;
         }
           
-        footer2{
+        .footer2{
             display: Flex;
             width: $w2;
             height: 100px;
@@ -722,16 +733,6 @@ $Alternos:(alterno1:rgba(226, 53, 0, 0.877), alterno2:rgb(236, 232, 0),alterno3:
                                 }
                             }
                     }           
-        
-        .nuevasideas{
-            @extend .suscribirse;
-            background-color:map-get($map:$Alternos, $key:alterno1)
-        }
-    
-        .derivados2{
-            @extend .derivados;
-            color:map-get($map:$Alternos, $key:alterno3)
-        }
     
                                                         /* termina index*/
 
@@ -787,13 +788,13 @@ $Alternos:(alterno1:rgba(226, 53, 0, 0.877), alterno2:rgb(236, 232, 0),alterno3:
     
      
     .contenedorventa{
-        @include sizes;
+        @include sizes($w2,$h2);
         background-color:$v;
         justify-content: center;
         align-items: center;
     
                                 .padre{
-                                    @include sizes;
+                                    @include sizes($w2,$h2);
                                     display: grid;
                                     grid-template-columns:repeat(3,125px);
                                     grid-template-rows:repeat(3,125px);
@@ -820,7 +821,7 @@ $Alternos:(alterno1:rgba(226, 53, 0, 0.877), alterno2:rgb(236, 232, 0),alterno3:
     
         
         .buzoremeras{
-          @include sizes;
+          @include sizes($w2,$h2);
         } 
     
     .contactos{
@@ -925,7 +926,7 @@ $Alternos:(alterno1:rgba(226, 53, 0, 0.877), alterno2:rgb(236, 232, 0),alterno3:
     
     
     .Comentarios{
-        @include sizes;
+        @include sizes($w2,$h2);
         display: flex;
         color: $v;
     
