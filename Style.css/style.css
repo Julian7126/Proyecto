@@ -537,7 +537,7 @@
   .bloque3 ul a {
     list-style: none;
     text-decoration: none;
-    color: rgba(187, 3, 3, 0.904);
+    color: white;
     font-size: 15px;
     border-radius: 10px;
     padding: 5px;
@@ -597,7 +597,7 @@
     margin-top: 80px;
     text-align: center;
     font-family: "Courier New", Courier, monospace;
-    color: rgb(106, 134, 2);
+    color: rgba(163, 8, 137, 0.849);
   }
   .footer {
     color: rgba(163, 8, 137, 0.849);
@@ -621,8 +621,8 @@
   .footer2 .suscribirse .derivados, .footer2 .nuevasideas .derivados, .footer2 .suscribirse .derivados2, .footer2 .nuevasideas .derivados2 {
     list-style: none;
     text-decoration: none;
-    color: rgba(187, 3, 3, 0.904);
-    font-size: 30px;
+    color: rgba(163, 8, 137, 0.849);
+    font-size: 20px;
     border-radius: 10px;
     padding: 5px;
   }
@@ -800,7 +800,7 @@
     width: 200px;
     font-family: "Courier New", Courier, monospace;
     color: black;
-    font-size: 10px;
+    font-size: 20px;
     text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
