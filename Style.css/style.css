@@ -34,8 +34,8 @@
     display: flex;
     color: white;
     text-align: center;
-    margin-top: -150px;
-    margin-left: 25px;
+    margin-top: -50px;
+    margin-left: 20px;
   }
   .calavera {
     height: 100px;
@@ -56,6 +56,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -70px;
   }
   .bloque2 img {
     height: 100px;
@@ -110,9 +111,9 @@
     text-align: left;
     position: relative;
     background-image: url(/Proyecto/assets/angelcaido1.jpg);
-    background-size: 100%;
     -webkit-animation: movimiento 10s infinite linear alternate;
             animation: movimiento 10s infinite linear alternate;
+    background-size: 100%;
     border-radius: 40px;
   }
   .bloque4 .angel_caido {
@@ -122,15 +123,6 @@
     border-radius: 20px;
     opacity: 0.2;
     position: relative;
-  }
-  .ruso {
-    font-size: larger;
-    font-family: "Courier New", Courier, monospace;
-    margin-left: 25px;
-    margin-top: -500px;
-    color: rgba(187, 3, 3, 0.904);
-    font-size: 25px;
-    text-align: center;
   }
   @-webkit-keyframes movimiento {
     from {
@@ -147,6 +139,15 @@
     to {
       background-position: top left;
     }
+  }
+  .ruso {
+    font-size: larger;
+    font-family: "Courier New", Courier, monospace;
+    margin-left: 25px;
+    margin-top: -500px;
+    color: rgba(187, 3, 3, 0.904);
+    font-size: 25px;
+    text-align: center;
   }
   .hotsale {
     margin-top: 100%;
@@ -260,13 +261,13 @@
     height: 100px;
     width: 200px;
     display: flex;
-    margin-top: 50px;
-    margin-left: 20px;
+    margin-top: 45px;
+    margin-left: 60px;
   }
   .formas {
     height: 100%;
     width: 50%;
-    margin-top: -110px;
+    margin-top: -140px;
     margin-left: 460px;
     font-family: "Courier New", Courier, monospace;
     color: rgba(187, 3, 3, 0.904);
@@ -277,7 +278,7 @@
     height: 25px;
     float: right;
     position: relative;
-    margin-top: -100px;
+    margin-top: -50px;
     margin-right: 50px;
   }
   .vete {
@@ -290,9 +291,11 @@
   .contenedorventa {
     width: 100%;
     height: 100%;
-    background-color: rgba(90, 88, 88, 0.932);
+    background-color: rgba(94, 94, 94, 0.932);
     justify-content: center;
     align-items: center;
+    display: flex;
+    border-radius: 30px;
   }
   .padre {
     display: grid;
@@ -305,8 +308,8 @@
          column-gap: 20px;
     row-gap: 20px;
     align-content: space-between;
-    background-color: rgb(63, 59, 59);
-    margin-left: 25%;
+    background-color: rgba(63, 59, 59, 0.63);
+    border-radius: 10px;
   }
   .hijo {
     width: 100%;
@@ -377,6 +380,13 @@
   }
   .acuerdo {
     font-size: 60px;
+    color: white;
+  }
+  .button {
+    width: 275px;
+    height: 60px;
+    border-radius: 25%;
+    background-color: rgba(255, 0, 0, 0.192);
     color: white;
   }
   .about {
@@ -469,7 +479,7 @@
   .bloque2 {
     color: black;
     background-color: black;
-    height: 100px;
+    height: 150px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -716,29 +726,25 @@
     list-style: none;
   }
   .bloque41 {
-    width: 500px;
-    height: 100%;
+    width: 100%;
+    height: 800px;
     display: flex;
   }
-  .bloque41 .angelmuriendo {
+  .angelmuriendo {
     display: flex;
     height: 500px;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 20px;
     opacity: 0.3;
-    position: relative;
   }
-  .bloque41 .angelmuriendo .input {
-    height: 150px;
-    width: 75%;
-    margin-left: 25px;
+  .input {
     display: flex;
-    margin-left: 25px;
-    margin-top: -100px;
-    position: absolute;
+    height: 150px;
+    width: 25%;
   }
-  .bloque41 .angelmuriendo .input .input1 {
-    width: 275px;
+  .input1 {
+    display: flex;
+    width: 125px;
     height: 40px;
     background-color: rgba(163, 8, 137, 0.849);
     color: white;
@@ -747,9 +753,12 @@
     text-align: center;
     border-bottom: 3px solid;
   }
-  .bloque41 .angelmuriendo .input .input1 .acuerdo {
-    font-size: 60px;
-    color: rgba(163, 8, 137, 0.849);
+  .button {
+    width: 300px;
+    height: 70px;
+    border-radius: 25%;
+    background-color: rgba(163, 8, 137, 0.849);
+    color: white;
   }
   /* aca comienza pagina about us */
   .about {

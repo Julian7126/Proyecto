@@ -58,8 +58,8 @@ $Alternos:(alterno1:rgba(226, 53, 0, 0.877), alterno2:rgb(236, 232, 0),alterno3:
         display: flex;
         color: $w;
         text-align: center;
-        margin-top: -150px;
-        margin-left: 25px;
+        margin-top: -50px;
+        margin-left: 20px;
     
     }
     
@@ -89,6 +89,7 @@ $Alternos:(alterno1:rgba(226, 53, 0, 0.877), alterno2:rgb(236, 232, 0),alterno3:
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: -70px;
                      img {
                         height: $h1;
                         width: 25%;
@@ -159,9 +160,10 @@ $Alternos:(alterno1:rgba(226, 53, 0, 0.877), alterno2:rgb(236, 232, 0),alterno3:
             text-align: left;
             position: relative;
             background-image: url(/Proyecto/assets/angelcaido1.jpg);
-            background-size: $w2;
             animation: movimiento 10s infinite linear alternate;
+            background-size: $w2;
             border-radius: 40px;
+
             
                                 .angel_caido{
                                     @include sizes($w2,$h2);
@@ -170,7 +172,19 @@ $Alternos:(alterno1:rgba(226, 53, 0, 0.877), alterno2:rgb(236, 232, 0),alterno3:
                                     opacity: 0.2;
                                     position: relative;
                                 }
-          }                      
+
+          }   
+
+          @keyframes movimiento {
+            from{
+                background-position : bottom 
+            }to{
+                background-position: top left }
+        
+            }
+          
+          
+          
 
  .ruso{
       font-size: larger;
@@ -182,17 +196,7 @@ $Alternos:(alterno1:rgba(226, 53, 0, 0.877), alterno2:rgb(236, 232, 0),alterno3:
          text-align: center;
                             
              }
-                                            
-         
-
-    
-    @keyframes movimiento {
-        from{
-            background-position : bottom 
-        }to{
-            background-position: top left }
-    
-        }
+                                        
 
     
     .hotsale{
@@ -287,15 +291,15 @@ $Alternos:(alterno1:rgba(226, 53, 0, 0.877), alterno2:rgb(236, 232, 0),alterno3:
         height: 100px;
         width: 200px;
         display: flex;
-        margin-top: 50px;
-        margin-left: 20px;
+        margin-top: 45px;
+        margin-left: 60px;
     
     }
     
     .formas{
         height: $h2;
         width: 50%;
-        margin-top: -110px;
+        margin-top: -140px;
         margin-left: 460px;
         font-family:$letra;
         color:$r;
@@ -310,7 +314,7 @@ $Alternos:(alterno1:rgba(226, 53, 0, 0.877), alterno2:rgb(236, 232, 0),alterno3:
        height: 25px;
        float: right;
        position: relative;
-       margin-top: -100px;
+       margin-top: -50px;
        margin-right:50px;
        
     }
@@ -326,9 +330,11 @@ $Alternos:(alterno1:rgba(226, 53, 0, 0.877), alterno2:rgb(236, 232, 0),alterno3:
      
     .contenedorventa{
        @include sizes($w2,$h2);
-        background-color:rgba(90, 88, 88, 0.932);
+        background-color:rgba(94, 94, 94, 0.932);
         justify-content: center;
         align-items: center;
+        display: flex;
+        border-radius: 30px;
     
     
     }
@@ -343,8 +349,9 @@ $Alternos:(alterno1:rgba(226, 53, 0, 0.877), alterno2:rgb(236, 232, 0),alterno3:
             column-gap: 20px;
             row-gap: 20px;
             align-content: space-between;
-            background-color: rgb(63, 59, 59);
-            margin-left: 25%;
+            background-color: rgba(63, 59, 59, 0.63);
+            border-radius: 10px;
+            
            
             
         }
@@ -435,6 +442,16 @@ $Alternos:(alterno1:rgba(226, 53, 0, 0.877), alterno2:rgb(236, 232, 0),alterno3:
     .acuerdo{
         font-size: 60px;
     color: white;
+    }
+
+    .button{
+        width: 275px;
+        height: 60px;
+        border-radius: 25%;
+        background-color: $m;
+        color: $w;
+    
+
     }
     
     .about{
@@ -548,7 +565,7 @@ $Alternos:(alterno1:rgba(226, 53, 0, 0.877), alterno2:rgb(236, 232, 0),alterno3:
         .bloque2 {
             color: $b;
             background-color: $b;
-            height: 100px;
+            height: 150px;
             width: $w2;
             display: flex;
             justify-content: center;
@@ -848,47 +865,46 @@ $Alternos:(alterno1:rgba(226, 53, 0, 0.877), alterno2:rgb(236, 232, 0),alterno3:
     
     
     .bloque41{
-        width: 500px;
-        height:100%;
+        width: $w2;
+        height:800px;
         display: flex;
-    
-                        .angelmuriendo{
-                            display: flex;
-                            height: 500px;
-                            width: $w2;
-                            border-radius: 10px;
-                            opacity: 0.3;
-                            position: relative;
-                  
-                                    .input{
-                                        height: 150px;
-                                        width: 75%;
-                                        margin-left: 25px;
-                                        display: flex;
-                                        margin-left: 25px;
-                                        margin-top: -100px;
-                                        position: absolute;
-                                        
-    
-                                                    .input1{
-                                                        width: 275px;
-                                                        height: 40px;
-                                                        background-color: $v;
-                                                        color: $w;
-                                                        padding-top: 20px;
-                                                        border-radius: 25%;
-                                                        text-align: center;
-                                                        border-bottom: 3px solid;
 
-                                                        .acuerdo{
-                                                            font-size: 60px;
-                                                        color: $v;
+        
+    }
+    .angelmuriendo{
+        display: flex;
+        height: 500px;
+        width: $w2;
+        border-radius: 20px;
+        opacity: 0.3;
+    }
+    .input{
+        display: flex;
+        height: 150px;
+        width: 25%;
+    
+    }
+    .input1{
+        display: flex;
+        width: 125px;
+        height: 40px;
+        background-color: $v;
+        color: $w;
+        padding-top: 20px;
+        border-radius: 25%;
+        text-align: center;
+        border-bottom: 3px solid;
+    }
+    
+    .button{
+        width: 300px;
+        height: 70px;
+        border-radius: 25%;
+        background-color: $v;
+        color: $w;
+    
 
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
+    }
                                     
                                           
                                            
