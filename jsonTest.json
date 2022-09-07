@@ -1,0 +1,25 @@
+[
+    {   "precio": 5000,
+        "id": 1,
+        "title": "Buzo 1",
+        "imagen": ".assets/Buzo.jpg"
+      },
+      {
+        "precio": 7000,
+        "id": 2,
+        "title": "Buzo 2",
+        "imagen": ".assets/buzo2.jpg"
+      },
+      {
+        "precio": 7000,
+        "id": 3,
+        "title": "Pantalon 1 ",
+        "imagen": ".assets/pant.jpg"
+      },
+      {
+        "precio": 8000,
+        "id": 4,
+        "title": "Pantalon 2",
+        "imagen": ".assets/pant2.jpg"
+      }
+    ] 
